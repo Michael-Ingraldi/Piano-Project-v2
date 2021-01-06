@@ -280,7 +280,7 @@ document.addEventListener(`keydown`, keyPress);
 ///////////////////////////////////////////////////////
 
 document.addEventListener('keyup', (e) => {
-  if ( (e.key) == "a" ) {
+  if ( (e.key) == "a" || (e.key) == "A" ) {
 
     window.aHeld = 0;
 
@@ -297,7 +297,7 @@ document.addEventListener('keyup', (e) => {
     pianoAKey.style.transform=`scale(1, 1)`
   }
 
-  if ( (e.key) == "s" ) {
+  if ( (e.key) == "s" || (e.key) == "S" ) {
 
     window.sHeld = 0;
 
@@ -314,7 +314,7 @@ document.addEventListener('keyup', (e) => {
     pianoSKey.style.transform=`scale(1, 1)`
   }
 
-  if ( (e.key) == "d" ) {
+  if ( (e.key) == "d" || (e.key) == "D" ) {
 
     window.dHeld = 0;
 
@@ -331,7 +331,7 @@ document.addEventListener('keyup', (e) => {
     pianoDKey.style.transform=`scale(1, 1)`
   }
 
-  if ( (e.key) == "f" ) {
+  if ( (e.key) == "f" || (e.key) == "F" ) {
 
     window.fHeld = 0;
 
@@ -348,7 +348,7 @@ document.addEventListener('keyup', (e) => {
     pianoFKey.style.transform=`scale(1, 1)`
   }
 
-  if ( (e.key) == "g" ) {
+  if ( (e.key) == "g" || (e.key) == "G" ) {
 
     window.gHeld = 0;
 
@@ -365,7 +365,7 @@ document.addEventListener('keyup', (e) => {
     pianoGKey.style.transform=`scale(1, 1)`
   }
 
-  if ( (e.key) == "h" ) {
+  if ( (e.key) == "h" || (e.key) == "H" ) {
 
     window.hHeld = 0;
 
@@ -382,7 +382,7 @@ document.addEventListener('keyup', (e) => {
     pianoHKey.style.transform=`scale(1, 1)`
   }
 
-  if ( (e.key) == "j" ) {
+  if ( (e.key) == "j" || (e.key) == "J" ) {
 
     window.jHeld = 0;
 
@@ -399,7 +399,7 @@ document.addEventListener('keyup', (e) => {
     pianoJKey.style.transform=`scale(1, 1)`
   }
 
-  if ( (e.key) == "k" ) {
+  if ( (e.key) == "k" || (e.key) == "K" ) {
 
     window.kHeld = 0;
 
@@ -416,7 +416,7 @@ document.addEventListener('keyup', (e) => {
     pianoKKey.style.transform=`scale(1, 1)`
   }
 
-  if ( (e.key) == "l" ) {
+  if ( (e.key) == "l" || (e.key) == "L" ) {
 
     window.lHeld = 0;
 
