@@ -1,12 +1,31 @@
+let timerToggle = 0;
+let counter = (500);
+
 var slider = document.getElementById("myRange");
 var output = document.querySelector(`#bpm`);
-output.innerHTML = slider.value; // Display the default slider value
+
+output.innerHTML = `OFF`
+output.style.color=`#505050`;
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
   output.innerHTML = `${this.value} BPM`
+  output.style.color=`white`;
   counter = (60000/this.value)
+  timerToggle = 1
 }
+
+output.addEventListener(`click`, (e) => {
+  if ( timerToggle == 1 ) {
+    output.innerHTML = `OFF`
+    timerToggle = 0
+    output.style.color=`#505050`;
+  } else {
+    output.innerHTML = `${slider.value} BPM`
+    timerToggle = 1
+    output.style.color=`white`;
+  }
+})
 
 //////////////////////////////////////////
 
@@ -97,13 +116,13 @@ let playThePianoSemicolon = function() {
 // pianoEndKey.addEventListener(`mousedown`, playThePianoSemicolon)
 
 
-let counter = (500);
-let timerToggle = 0;
 
 //Metronome function
 let metronome = function() {
+
+  setTimeout(metronome, counter);
+
   if (timerToggle == 1) {
-    setTimeout(metronome, counter);
     let sfx = new Audio(`audio/tik.wav`);
     sfx.play()
 
