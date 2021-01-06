@@ -130,16 +130,16 @@ let metronome = function() {
 
 setTimeout(metronome, counter);
 
-let aSound = new Audio (`audio/Piano A.wav`)
-let sSound = new Audio (`audio/Piano S.wav`)
-let dSound = new Audio (`audio/Piano D.wav`)
-let fSound = new Audio (`audio/Piano F.wav`)
-let gSound = new Audio (`audio/Piano G.wav`)
-let hSound = new Audio (`audio/Piano H.wav`)
-let jSound = new Audio (`audio/Piano J.wav`)
-let kSound = new Audio (`audio/Piano K.wav`)
-let lSound = new Audio (`audio/Piano L.wav`)
-let semiSound = new Audio (`audio/Piano End.wav`)
+let aSound = new Audio (`audio/Piano A.mp3`)
+let sSound = new Audio (`audio/Piano S.mp3`)
+let dSound = new Audio (`audio/Piano D.mp3`)
+let fSound = new Audio (`audio/Piano F.mp3`)
+let gSound = new Audio (`audio/Piano G.mp3`)
+let hSound = new Audio (`audio/Piano H.mp3`)
+let jSound = new Audio (`audio/Piano J.mp3`)
+let kSound = new Audio (`audio/Piano K.mp3`)
+let lSound = new Audio (`audio/Piano L.mp3`)
+let semiSound = new Audio (`audio/Piano End.mp3`)
 
 window.aHeld=0;
 window.sHeld=0;
@@ -174,7 +174,7 @@ window.semiHeld=0;
 let keyPress = function(event) {
 
 if (event.code === `KeyA` && window.aHeld == 0) {
-    let sfx = new Audio (`audio/Piano A.wav`)
+    let sfx = new Audio (`audio/Piano A.mp3`)
     aSound.play()
     pianoAKey.style.fill=`#d3d3d3`
     pianoAKey.style.transform=`scale(0.9, 0.9)`
@@ -184,7 +184,7 @@ if (event.code === `KeyA` && window.aHeld == 0) {
     window.aHeld=1;
 
 } else if (event.code === `KeyS` && window.sHeld == 0) {
-    let sfx = new Audio (`audio/Piano S.wav`)
+    let sfx = new Audio (`audio/Piano S.mp3`)
     sSound.play()
     pianoSKey.style.fill=`#d3d3d3`
     pianoSKey.style.transform=`scale(0.9, 0.9)`
@@ -194,7 +194,7 @@ if (event.code === `KeyA` && window.aHeld == 0) {
     window.sHeld=1;
 
 } else if (event.code === `KeyD` && window.dHeld == 0) {
-    let sfx = new Audio (`audio/Piano D.wav`)
+    let sfx = new Audio (`audio/Piano D.mp3`)
     dSound.play()
     pianoDKey.style.fill=`#d3d3d3`
     pianoDKey.style.transform=`scale(0.9, 0.9)`
@@ -204,7 +204,7 @@ if (event.code === `KeyA` && window.aHeld == 0) {
     window.dHeld=1;
 
 } else if (event.code === `KeyF` && window.fHeld == 0) {
-    let sfx = new Audio (`audio/Piano F.wav`)
+    let sfx = new Audio (`audio/Piano F.mp3`)
     fSound.play()
     pianoFKey.style.fill=`#d3d3d3`
     pianoFKey.style.transform=`scale(0.9, 0.9)`
@@ -214,7 +214,7 @@ if (event.code === `KeyA` && window.aHeld == 0) {
     window.fHeld=1;
 
 } else if (event.code === `KeyG` && window.gHeld == 0) {
-    let sfx = new Audio (`audio/Piano G.wav`)
+    let sfx = new Audio (`audio/Piano G.mp3`)
     gSound.play()
     pianoGKey.style.fill=`#d3d3d3`
     pianoGKey.style.transform=`scale(0.9, 0.9)`
@@ -224,7 +224,7 @@ if (event.code === `KeyA` && window.aHeld == 0) {
     window.gHeld=1;
 
 } else if (event.code === `KeyH` && window.hHeld == 0) {
-    let sfx = new Audio (`audio/Piano H.wav`)
+    let sfx = new Audio (`audio/Piano H.mp3`)
     hSound.play()
     pianoHKey.style.fill=`#d3d3d3`
     pianoHKey.style.transform=`scale(0.9, 0.9)`
@@ -234,7 +234,7 @@ if (event.code === `KeyA` && window.aHeld == 0) {
     window.hHeld=1;
 
 } else if (event.code === `KeyJ` && window.jHeld == 0) {
-    let sfx = new Audio (`audio/Piano J.wav`)
+    let sfx = new Audio (`audio/Piano J.mp3`)
     jSound.play()
     pianoJKey.style.fill=`#d3d3d3`
     pianoJKey.style.transform=`scale(0.9, 0.9)`
@@ -244,7 +244,7 @@ if (event.code === `KeyA` && window.aHeld == 0) {
     window.jHeld=1;
 
 } else if (event.code === `KeyK` && window.kHeld == 0) {
-    let sfx = new Audio (`audio/Piano K.wav`)
+    let sfx = new Audio (`audio/Piano K.mp3`)
     kSound.play()
     pianoKKey.style.fill=`#d3d3d3`
     pianoKKey.style.transform=`scale(0.9, 0.9)`
@@ -254,7 +254,7 @@ if (event.code === `KeyA` && window.aHeld == 0) {
     window.kHeld=1;
 
 } else if (event.code === `KeyL` && window.lHeld == 0) {
-    let sfx = new Audio (`audio/Piano L.wav`)
+    let sfx = new Audio (`audio/Piano L.mp3`)
     lSound.play()
     pianoLKey.style.fill=`#d3d3d3`
     pianoLKey.style.transform=`scale(0.9, 0.9)`
@@ -264,7 +264,7 @@ if (event.code === `KeyA` && window.aHeld == 0) {
     window.lHeld=1;
 
 } else if (event.code === `Semicolon` && window.semiHeld == 0) {
-    let sfx = new Audio (`audio/Piano End.wav`)
+    let sfx = new Audio (`audio/Piano End.mp3`)
     semiSound.play()
     pianoEndKey.style.fill=`#d3d3d3`
     pianoEndKey.style.transform=`scale(0.9, 0.9)`
