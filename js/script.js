@@ -9,23 +9,18 @@ output.style.color=`#505050`;
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
+  if ( this.value > 39 ) {
   output.innerHTML = `${this.value} BPM`
-
-  counter = (60000/this.value)
   timerToggle = 1
-}
-
-output.addEventListener(`click`, (e) => {
-  if ( timerToggle == 1 ) {
+  } else {
     output.innerHTML = `OFF`
     timerToggle = 0
     output.style.color=`#505050`;
-  } else {
-    output.innerHTML = `${slider.value} BPM`
-    timerToggle = 1
-    output.style.color=`white`;
   }
-})
+
+  counter = (60000/this.value)
+  
+}
 
 //////////////////////////////////////////
 
