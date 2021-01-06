@@ -1,8 +1,8 @@
 let timerToggle = 0;
 let counter = (500);
 
-var slider = document.getElementById("myRange");
-var output = document.querySelector(`#bpm`);
+let slider = document.getElementById("myRange");
+let output = document.querySelector(`#bpm`);
 
 output.innerHTML = `OFF`
 output.style.color=`#505050`;
@@ -10,7 +10,7 @@ output.style.color=`#505050`;
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
   output.innerHTML = `${this.value} BPM`
-  output.style.color=`white`;
+
   counter = (60000/this.value)
   timerToggle = 1
 }
@@ -126,10 +126,10 @@ let metronome = function() {
     let sfx = new Audio(`audio/tik.wav`);
     sfx.play()
 
-  if (slider.style.background =='white')
-    slider.style.background='#d3d3d3'
+  if (output.style.color =='white')
+    output.style.color='#505050'
   else
-    slider.style.background='white'
+    output.style.color='white'
   }
 }
 
